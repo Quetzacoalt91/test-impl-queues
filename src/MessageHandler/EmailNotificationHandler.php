@@ -9,6 +9,6 @@ class EmailNotificationHandler implements MessageHandlerInterface
 {
     public function __invoke(EmailNotification $message)
     {
-        // ... do some work - like sending an SMS message!
+        dump('At this moment the following email should be sent.', $message);
     }
 }
